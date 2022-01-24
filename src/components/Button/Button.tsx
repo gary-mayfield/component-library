@@ -1,11 +1,25 @@
-import React from 'react'
+import React from 'react';
+import classnames from 'classnames';
+import { ButtonProps } from './Button.types';
 import './Button.scss';
 
-type ButtonProps = {label: string}
-
-const Button = ({label} : ButtonProps)  => {
+const Button = ({
+    buttonStyle = 'light',
+    label = 'Button',
+    onClick,
+    type='button',
+    ...other
+} : ButtonProps)  => {
  return (
- <button>
+ <button
+    type={type}
+    className={classnames([
+        'button',
+        `button--${buttonStyle}`
+    ])}
+    onClick={onClick && ((e) => onClick(e))}
+    {...other}
+ >
      {label}
  </button>
  )
