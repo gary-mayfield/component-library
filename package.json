@@ -1,6 +1,9 @@
 {
-  "name": "componentlibrary",
-  "version": "0.0.1",
+  "name": "@gary-mayfield/component-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg,github.com/gary-mayfield"
+  },
+  "version": "0.0.2",
   "description": "React component library",
   "scripts": {
     "rollup": "rollup -c"
@@ -12,9 +15,11 @@
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
     "@types/react": "^17.0.38",
+    "postcss": "^8.4.5",
     "react": "^17.0.2",
     "rollup": "^2.66.0",
     "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
   },
