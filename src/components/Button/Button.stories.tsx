@@ -29,14 +29,17 @@ Default.args = {
   buttonStyle: 'light'
 }
 
-export const Light = Template.bind({});
-Light.args = {
-  label: 'Light',
-  buttonStyle: 'light',
-};
-
-export const Dark = Template.bind({});
-Dark.args = {
-  label: 'Dark',
-  buttonStyle: 'dark',
+Default.argTypes = {
+  buttonStyle: {
+    control: {
+      type: 'select',
+      options: [
+        'light',
+        'dark'
+      ],
+    },
+    table: {
+      disable: false,
+    },
+  },
 };

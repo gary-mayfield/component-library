@@ -1,0 +1,46 @@
+@import '../../assets/scss/common.scss';
+
+.tile {
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: medium;
+    padding: 24px 44px 24px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+
+    &--light {
+        background-color: $verdigris;
+        color: $timberwolf;
+        
+        &:hover {
+            opacity: 0.8;
+            border: 1px solid $xanadu;
+        }
+    }
+
+    &--dark {
+        background-color: $state-blue;
+        color: $nyanza;
+
+        &:hover {
+            opacity: 0.8;
+            border: 1px solid $candy-pink;
+        }
+    }
+
+    &--header {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    &--description {
+        display: flex;
+        font-size: larger;
+        line-height: 1.5;
+    }
+
+
+}

@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg,github.com/gary-mayfield"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React component library",
   "scripts": {
     "rollup": "rollup -c",
