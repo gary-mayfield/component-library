@@ -10,27 +10,28 @@
     width: 100%;
 
     &--light{
-        background-color: $light-colour;
+        background-color: $liberty;
+        color: $timberwolf;
 
         &:focus{
-            @include light-focus;
+            border: 2px solid $pine-green;
         }
 
         &:hover{
-            color: grey;
+            color: $verdigris;
         }
     }
 
     &--dark{
-        background-color: $dark-colour;
-        color: white;
+        background-color: $dark-purple;
+        color: $nyanza;
 
         &:focus{
-            @include dark-focus;
+            border: 2px solid $copper-penny;
         }
 
         &:hover{
-            color: grey;
+            color: $state-blue;
         }
     }
 

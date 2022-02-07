@@ -1,8 +1,0 @@
-@mixin dark-focus {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,78,82,1) 100%, rgba(0,212,255,1) 100%);
-  }
-
-@mixin light-focus {
-  background: rgb(47,147,102);
-  background: linear-gradient(290deg, rgba(47,147,102,1) 0%, rgba(0,255,222,1) 100%);  }
