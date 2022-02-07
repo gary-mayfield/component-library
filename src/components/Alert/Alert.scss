@@ -1,0 +1,59 @@
+@import '../../assets/scss/common.scss';
+
+.alert {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.7;
+
+    a {
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+            font-size: large;
+        }
+    }
+
+    &--header{
+        display: block;
+        font-size: larger;
+        font-weight: bold;
+
+        &--standalone{
+            padding: 13.5px 16px 13.5px 48px;
+        }
+
+        &--with--content{
+            padding: 13.5px 16px 8px 48px;
+        }
+    }
+
+    &--content{
+        font-size: medium;
+        padding: 0 16px 16px 48px;
+    }
+
+    &--error{
+        background-color: $error-colour;
+        background-position: 8px 8px;
+    }
+
+    &--info{
+        background-color: $info-colour;
+        background-position: 8px 8px;
+    }
+
+    &--success{
+        background-color: $success-colour;
+        background-position: 8px 8px;
+    }
+
+    &--warning{
+        background-color: $warning-colour;
+        background-position: 8px 8px;
+    }
+
+}
