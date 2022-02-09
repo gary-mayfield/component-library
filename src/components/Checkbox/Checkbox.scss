@@ -1,0 +1,50 @@
+@import '../../assets/scss/common.scss';
+
+.checkbox {
+    font-size: 24px;
+    width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+    position: relative;
+    border-radius: 15px;
+
+    &--input {
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+    &--input+&--label {
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 40px;
+        line-height: 1em;
+        margin-bottom: 0;
+    }
+
+    &--input+&--label:before {
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        width: 18px;
+        height: 18px;
+    }
+
+    &--light {
+        color: $copper-penny;
+        &:hover {
+            background-color: $verdigris;
+        }
+    }
+
+    &--label{
+        font-size: x-large;
+    }
+
+    &--dark {
+        color: $state-blue;
+    }
+}
