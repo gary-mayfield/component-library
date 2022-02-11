@@ -14,8 +14,8 @@ const Template: ComponentStory<typeof Tile> = (args) => <Tile {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  header: 'Pay to drive',
-  description: 'Congestion charge, LEZ, ULEZ',
+  header: 'More info',
+  description: 'Click me to see...',
   tileStyle: 'light',
   href: '',
 };
