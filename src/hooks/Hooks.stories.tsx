@@ -54,3 +54,27 @@ export const UseFetch = () => (
         </figure>
     </div>
 );
+
+export const UseToggle = () => (
+    <div className="hooks">
+        <h1>UseToggle</h1>
+        <figure>
+            <figcaption>useToggle.ts</figcaption>
+            <pre>
+                <code className="language-css">{`
+                    import { useCallback, useState } from "react";
+
+                    const useToggle = (initialState = false) => {
+                        const [state, setState] = useState(initialState);
+
+                        const toggle = useCallback(() => setState(state => !state), []);
+                        return [state, toggle]
+                    }
+
+                    export default useToggle;
+            
+          `}</code>
+            </pre>
+        </figure>
+    </div>
+);
