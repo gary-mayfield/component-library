@@ -7,15 +7,13 @@
     margin-bottom: 16px;
     position: relative;
     border-radius: 15px;
-
+    
     &--input {
         width: 18px;
         height: 18px;
     }
 
-
-
-    &--input+&--label {
+    &--input + &--label {
         display: inline-block;
         cursor: pointer;
         padding-top: 6px;
@@ -35,12 +33,13 @@
 
     &--light {
         color: $copper-penny;
+
         &:hover {
             background-color: $verdigris;
         }
     }
 
-    &--label{
+    &--label {
         font-size: x-large;
     }
 
